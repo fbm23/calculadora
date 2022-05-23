@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <header>
+        <h1>
+            Dias vector
+        </h1>
+    </header>
+        
+        <section class="calculos">
+            <br><br><br>
+            <input type="number" id="numeroA">
+            <button id="btn">Dia?</button>
+            <br><br><br>
+            <h2>
+                Dia favorito:</p>
+                <div id="resultado"></div>
+
+                <script>
+                    var b = document.getElementById('btn');
+                    b.addEventListener('click', dias);
+
+                    function dias() {
+                        var p = parseInt(document.getElementById('numeroA').value);
+                        var dias = ["Lunes", "Martes", "Miercoles", "Jueves", "Viernes", "Sabado", "Domingo"];
+                        midia = p
+                        midia--;
+                        if (midia >= 0 && midia < 7) { r = dias[midia] }
+                        else { r = "No existe ese dia"; }
+                        
+                        document.getElementById("resultado").innerHTML = r
+
+                    }
+                    
+                    
+
+                </script>
+        </section>
+  
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
